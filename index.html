@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<div data-aos="fade-up">
-  <h2>Animated Section</h2>
-</div>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My First Git Project</title>
+  <title>My First GitHub Page</title>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
       color: white;
       text-align: center;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 2rem;
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.2rem;
-      margin: 0.5rem 0 2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
     }
 
     .buttons {
       display: flex;
-      justify-content: center;
       gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     a.button {
-      background-color: #ffffff;
-      color: #1f1c2c;
-      text-decoration: none;
+      background: #ffffff;
+      color: #141e30;
       padding: 0.8rem 1.5rem;
-      border-radius: 30px;
+      text-decoration: none;
+      border-radius: 25px;
       font-weight: bold;
       transition: background-color 0.3s;
     }
 
     a.button:hover {
-      background-color: #dcdcdc;
+      background-color: #d4d4d4;
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      font-size: 0.9rem;
-      opacity: 0.7;
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Welcome to My Project</h1>
-  <p>I’m Ajith — exploring Git, GitHub & web development!</p>
 
-  <div class="buttons">
+  <h1 data-aos="zoom-in">🚀 Welcome to My Project</h1>
+
+  <p data-aos="fade-up" data-aos-delay="200">
+    I'm Ajith, learning Git & GitHub. This is my very first published web page!<br>
+    Hope you enjoy watching my progress. 😄
+  </p>
+
+  <div class="buttons" data-aos="fade-up" data-aos-delay="400">
     <a href="#" class="button">View My Work</a>
     <a href="#" class="button">Contact Me</a>
   </div>
 
-  <footer>
-    Made with ❤️ and curiosity | July 2025
+  <footer data-aos="fade-up" data-aos-delay="600">
+    Made with ❤️ by Ajith | July 2025
   </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
-
-<style>
-  .fade-in {
-    animation: fadeIn 2s ease-in;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-</style>
-
-<h1 class="fade-in">Welcome to My GitHub Page!</h1>
-

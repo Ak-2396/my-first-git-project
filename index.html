@@ -2,133 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ajith | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajith's Portfolio</title>
+
+  <!-- Google Fonts: Quicksand -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <<style>
-body {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mandala.svg/1024px-Mandala.svg.png');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 30%;
-  background-attachment: fixed;
-  opacity: 1;
-}
 
-header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(to bottom, #eeeeee, #e0e0e0);
-  color: #222;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
+  <style>
+    /* Reset and font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
 
-header h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-
-  section {
-    background-color: #fff;
-    padding: 2rem 1.5rem;
-    max-width: 800px;
-    margin: 2rem auto;
-    border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
-  }
-
-  h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    color: #222;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  ul li {
-    background: #f7f7f7;
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    border-left: 4px solid #bbb;
-    border-radius: 6px;
-  }
-
-  .contact a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-
-  footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-    color: #777;
-    background-color: #dcdcdc;
-  }
-
-  @media (max-width: 600px) {
     body {
-      background-size: 90%;
+      background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+      background-image: url('https://i.ibb.co/3YdG7mR/mandala-faint.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(5px);
+      border-radius: 12px;
     }
 
     header h1 {
-      font-size: 2.2rem;
+      font-size: 3rem;
+      font-weight: 600;
     }
-  }
-</style>
 
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    section {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 20px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>Ajith</h1>
+      <p>Tech Enthusiast & Problem Solver</p>
+    </header>
 
-  <header>
-    <h1>Ajith</h1>
-    <p>Tech Enthusiast & Problem Solver</p>
-  </header>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I’m an enthusiastic learner with a deep interest in technology, coding, and web design. 
+        I enjoy exploring new tools, learning by doing, and building meaningful digital experiences. 
+        With a strong foundation in communication and problem-solving, I’m now transitioning into the world of development.
+      </p>
+    </section>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I’m an enthusiastic learner with a deep interest in technology, coding, and web design. 
-      I enjoy exploring new tools, learning by doing, and building meaningful digital experiences. 
-      With a strong foundation in communication and problem-solving, I'm now transitioning into the world of development.
-    </p>
-  </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Customer Support</li>
+        <li>Communication</li>
+        <li>Multi-tasking</li>
+        <li>Fast Learner</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Communication</li>
-      <li>Customer Experience</li>
-      <li>Multitasking</li>
-      <li>Fast Learning</li>
-      <li>Curiosity-Driven Mindset</li>
-    </ul>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:write_ajith@outlook.com">write_ajith@outlook.com</a></p>
-    <p>GitHub: <a href="https://github.com/Ak-2396" target="_blank">github.com/Ak-2396</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Ajith. All rights reserved.
-  </footer>
-
+    <div class="contact">
+      Contact me: write_ajith@outlook.com
+    </div>
+  </div>
 </body>
 </html>

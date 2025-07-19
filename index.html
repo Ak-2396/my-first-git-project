@@ -2,88 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My First GitHub Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajith | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- AOS Animation CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #141e30, #243b55);
-      color: white;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
+      padding: 4rem 1rem 2rem;
     }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    header h1 {
+      font-size: 2.8rem;
     }
 
-    p {
+    header p {
       font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
+      opacity: 0.8;
     }
 
-    .buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
     }
 
-    a.button {
-      background: #ffffff;
-      color: #141e30;
-      padding: 0.8rem 1.5rem;
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #00d4ff;
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 0.5rem 0;
+    }
+
+    .contact a {
+      color: #00d4ff;
       text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    a.button:hover {
-      background-color: #d4d4d4;
     }
 
     footer {
-      margin-top: 4rem;
-      font-size: 0.8rem;
+      text-align: center;
+      margin: 3rem 0 1rem;
+      font-size: 0.9rem;
       opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
+  <header data-aos="fade-down">
+    <h1>Ajith</h1>
+    <p>Tech-Enthusiast & Problem Solver</p>
+  </header>
 
-  <h1 data-aos="zoom-in">🚀 Welcome to My Project</h1>
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I’m an enthusiastic learner with a deep interest in technology, coding, and web design. I enjoy exploring new tools,
+      learning by doing, and building meaningful digital experiences. With a strong foundation in communication and
+      problem-solving, I'm now transitioning into the world of development.
+    </p>
+  </section>
 
-  <p data-aos="fade-up" data-aos-delay="200">
-    I'm Ajith, learning Git & GitHub. This is my very first published web page!<br>
-    Hope you enjoy watching my progress. 😄
-  </p>
+  <section data-aos="fade-up" data-aos-delay="100">
+    <h2>Skills</h2>
+    <ul>
+      <li>Communication</li>
+      <li>Customer Experience</li>
+      <li>Multitasking</li>
+      <li>Fast Learning</li>
+      <li>Curiosity-Driven Mindset</li>
+    </ul>
+  </section>
 
-  <div class="buttons" data-aos="fade-up" data-aos-delay="400">
-    <a href="#" class="button">View My Work</a>
-    <a href="#" class="button">Contact Me</a>
-  </div>
+  <section data-aos="fade-up" data-aos-delay="200">
+    <h2>Contact</h2>
+    <p class="contact">
+      📧 <a href="mailto:write_ajith@outlook.com">write_ajith@outlook.com</a><br>
+      💻 <a href="https://github.com/Ak-2396" target="_blank">github.com/Ak-2396</a>
+    </p>
+  </section>
 
-  <footer data-aos="fade-up" data-aos-delay="600">
-    Made with ❤️ by Ajith | July 2025
+  <footer data-aos="fade-up" data-aos-delay="300">
+    &copy; 2025 Ajith | All rights reserved.
   </footer>
 
-  <!-- AOS Animation Script -->
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>

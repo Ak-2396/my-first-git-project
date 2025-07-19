@@ -2,46 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ajith | Portfolio</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
+      margin: 0;
       font-family: 'Quicksand', sans-serif;
-      background-color: #000;
+      background-color: #111;
       color: #fff;
-      line-height: 1.6;
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/7/76/Mandala_1.svg') center center / contain no-repeat;
-      opacity: 0.05;
-      z-index: 0;
-    }
-
-    header, section, footer {
-      position: relative;
-      z-index: 1;
+      background-image: url('https://i.imgur.com/w4ItkUe.png'); /* Mandala PNG (soft grey) */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+      background-attachment: fixed;
     }
 
     header {
@@ -50,25 +24,26 @@
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
+      margin: 0;
     }
 
     header p {
       font-size: 1.2rem;
-      opacity: 0.8;
+      color: #ccc;
     }
 
     section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
+      padding: 2rem 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.5rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #fff;
-      display: inline-block;
     }
 
     ul {
@@ -77,44 +52,52 @@
     }
 
     ul li {
-      padding: 0.5rem 0;
+      background: #222;
+      margin-bottom: 0.5rem;
+      padding: 0.8rem;
+      border-radius: 8px;
     }
 
     .contact a {
-      color: #ffffff;
-      text-decoration: underline;
+      color: #ffcc70;
+      text-decoration: none;
     }
 
     footer {
       text-align: center;
-      margin: 3rem 0 1rem;
+      padding: 2rem;
       font-size: 0.9rem;
-      opacity: 0.6;
+      color: #777;
     }
 
     @media (max-width: 600px) {
+      body {
+        background-size: 90%;
+      }
+
       header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
     }
   </style>
 </head>
 <body>
-  <header data-aos="fade-down">
+
+  <header>
     <h1>Ajith</h1>
-    <p>Tech-Enthusiast & Problem Solver</p>
+    <p>Tech Enthusiast & Problem Solver</p>
   </header>
 
-  <section data-aos="fade-up">
+  <section>
     <h2>About Me</h2>
     <p>
-      I’m an enthusiastic learner with a deep interest in technology, coding, and web design. I enjoy exploring new tools,
-      learning by doing, and building meaningful digital experiences. With a strong foundation in communication and
-      problem-solving, I'm now transitioning into the world of development.
+      I’m an enthusiastic learner with a deep interest in technology, coding, and web design. 
+      I enjoy exploring new tools, learning by doing, and building meaningful digital experiences. 
+      With a strong foundation in communication and problem-solving, I'm now transitioning into the world of development.
     </p>
   </section>
 
-  <section data-aos="fade-up" data-aos-delay="100">
+  <section>
     <h2>Skills</h2>
     <ul>
       <li>Communication</li>
@@ -125,20 +108,15 @@
     </ul>
   </section>
 
-  <section data-aos="fade-up" data-aos-delay="200">
+  <section class="contact">
     <h2>Contact</h2>
-    <p class="contact">
-      📧 <a href="mailto:write_ajith@outlook.com">write_ajith@outlook.com</a><br>
-      💻 <a href="https://github.com/Ak-2396" target="_blank">github.com/Ak-2396</a>
-    </p>
+    <p>Email: <a href="mailto:write_ajith@outlook.com">write_ajith@outlook.com</a></p>
+    <p>GitHub: <a href="https://github.com/Ak-2396" target="_blank">github.com/Ak-2396</a></p>
   </section>
 
-  <footer data-aos="fade-up" data-aos-delay="300">
-    &copy; 2025 Ajith | All rights reserved.
+  <footer>
+    &copy; 2025 Ajith. All rights reserved.
   </footer>
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
